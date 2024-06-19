@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+:root{
+  --primary: #1371dd;
+  --secondary: #354f8e;
+  --light: #eff5f9;
+  --dark: #1d2a4d;
+}
+/* start navbar section */
+  .navbar-light .navbar-nav .nav-link{
+    font-family: 'jost', sans-serif;
+    position: relative;
+    margin-left: 30px;
+    padding: 30px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--dark);
+    outline: none;
+    transition: .5s;
+  }
+  .navbar-nav{
+    justify-content: space-between;
+    text-align: center;
+  }
+  .btn{
+    font-weight: 700;
+    transition: 1s;
+  }
+  .btn-outline-primary{
+    margin-left: auto;
+  }
+  .navbar-light .navbar-nav .nav-link:hover,
+  .navbar-light .navbar-nav .nav-link.active{
+    color: var(--primary);
+  }
+  @media(min-width:992px) {
+    .navbar-light .navbar-nav .nav-link::before{
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 5px;
+      bottom: 0;
+      left: 50%;
+      background: var(--primary);
+      transition: .5s;
+    }
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before{
+      width: 100%;
+      left: 0;
+    }
+  }
+  @media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link{
+      margin-left: 0;
+      padding: 10px 0;
+    }
+  }
+  /* end navbar secetion */
+
+  /* start hero section */
+  .hero-header{
+    background: url('../../Img Assets/hero.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+  }
+  /* end of hero section */
+
+  /* service section */
+  .service-item{
+    position: relative;
+    height: 350px;
+    padding: 0 30px;
+    transition: .5s;
+  }
+  .service-item .service-icon{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    border-radius: 50%;
+    transform: rotate(-14deg);
+  }
+  .service-item span.btn{
+    position: absolute;
+    width: 60px;
+    bottom: -48px;
+    left: 50%;
+    margin-left: -30px;
+    opacity: 0;
+  }
+  .service-item:hover span.btn{
+    bottom: -24px;
+    opacity: 1;
+  }
+  /* end of service section */
+
+  /* professtional doctors section */
+  @media (min-width:600px){
+    .team-item .row{
+      height: 350px;
+    }
+  }
+  /* end of professtional doctors section */
+  

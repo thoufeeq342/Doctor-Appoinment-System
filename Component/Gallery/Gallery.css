@@ -1,0 +1,23 @@
+/* gallery section */
+.main-banner {
+    border-bottom: 3px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .main-banner .left-content .thumb img {
+    width: 100%;
+    overflow: hidden;
+  }
+  .main-banner .right-content .right-first-image {
+    margin-bottom: 28.5px;
+  }
+  .main-banner .right-content .right-first-image .thumb {
+    position: relative;
+    text-align: center;
+  }
+  .main-banner .right-content .right-first-image .thumb img {
+    width: 100%;
+    overflow: hidden;
+  }
+  /* end of gallery */
+  

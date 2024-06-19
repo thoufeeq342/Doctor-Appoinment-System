@@ -1,0 +1,7 @@
+ /* professtional doctors section */
+ @media (min-width:600px){
+    .team-item .row{
+      height: 350px;
+    }
+  }
+  /* end of professtional doctors section */
